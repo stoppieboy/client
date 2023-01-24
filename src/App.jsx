@@ -6,10 +6,10 @@ import Calculator from './Components/Calculator.jsx';
 import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar} from 'react-pro-sidebar';
 
 function App(){
-    // const {collapseSidebar} = useProSidebar();
+    const {collapseSidebar} = useProSidebar();
     return(
         <div>
-            {/* <Sidebar>
+            <Sidebar>
                 <Menu>
                     <SubMenu>
                         <MenuItem> Pie Charts </MenuItem>
@@ -18,8 +18,8 @@ function App(){
                     <MenuItem> Documentation </MenuItem>
                     <MenuItem> Calendar </MenuItem>
                 </Menu>
-            </Sidebar> */}
-            {/* <button onClick={()=>collapseSidebar()}>Collapse</button> */}
+            </Sidebar>
+            <button onClick={()=>collapseSidebar()}>Collapse</button>
             <Clock></Clock>
             <Toggle></Toggle>
             <LoginControl></LoginControl>
